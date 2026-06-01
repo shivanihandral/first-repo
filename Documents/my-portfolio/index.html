@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivani Handral | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; color: #333; background: #f9f9f9; }
+
+    /* NAVBAR */
+    nav {
+      background: #1a1a2e;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo { color: #e94560; font-size: 22px; font-weight: 700; }
+    nav ul { list-style: none; display: flex; gap: 24px; }
+    nav ul li a { color: #fff; text-decoration: none; font-size: 15px; }
+    nav ul li a:hover { color: #e94560; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 { font-size: 48px; margin-bottom: 12px; }
+    .hero h1 span { color: #e94560; }
+    .hero p { font-size: 20px; color: #aaa; margin-bottom: 8px; }
+    .hero .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 32px;
+      background: #e94560;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* SECTIONS */
+    section { padding: 60px 10%; }
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-align: center;
+      position: relative;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #e94560;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ABOUT */
+    .about-content {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* SKILLS */
+    #skills { background: #fff; }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .skill-badge {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-top: 4px solid #e94560;
+    }
+    .project-card h3 { font-size: 18px; margin-bottom: 10px; color: #1a1a2e; }
+    .project-card p { font-size: 14px; color: #666; line-height: 1.6; }
+    .project-card .tag {
+      display: inline-block;
+      margin-top: 12px;
+      background: #f0f0f0;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    /* CONTACT */
+    #contact { background: #1a1a2e; color: white; text-align: center; }
+    #contact h2 { color: white; }
+    #contact h2::after { background: #e94560; }
+    .contact-links { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 16px; }
+    .contact-links a {
+      color: #e94560;
+      text-decoration: none;
+      font-size: 16px;
+      border: 1px solid #e94560;
+      padding: 10px 24px;
+      border-radius: 30px;
+    }
+    .contact-links a:hover { background: #e94560; color: white; }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Shivani.dev</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hi, I'm <span>Shivani Handral</span></h1>
+    <p>Computer Science Student | Aspiring Developer</p>
+    <p>NEW HORIZON COLLEGE OF ENGINEERING, BENGALURU| 2nd Year CSE</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        I am a passionate Computer Science Engineering student with a strong interest
+        in web development and problem solving. I love building projects that solve
+        real-world problems and I am always eager to learn new technologies.
+        Currently exploring Git, GitHub, and modern web development.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-badge">HTML</span>
+      <span class="skill-badge">CSS</span>
+      <span class="skill-badge">C Programming</span>
+      <span class="skill-badge">Java</span>
+      <span class="skill-badge">Git & GitHub</span>
+      <span class="skill-badge">Problem Solving</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive portfolio website built using HTML and CSS to showcase my skills and projects.</p>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">GitHub Pages</span>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 2 Title</h3>
+        <p>COMING SOON.....</p>
+        <span class="tag">C programming</span>
+      </div>
+
+     
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p style="color:#aaa; margin-bottom: 24px;">Feel free to reach out for collaborations or just a hello!</p>
+    <div class="contact-links">
+      <a href="mailto:shivanihandra1@gmail.com">Email Me</a>
+      <a href="https://github.com/shivanihandral" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/shivani-handral-0395593b6/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>by Shivani Handral &copy; 2026</p>
+  </footer>
+
+</body>
+</html>
